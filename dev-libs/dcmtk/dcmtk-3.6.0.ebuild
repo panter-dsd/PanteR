@@ -6,17 +6,17 @@ EAPI=4
 
 inherit cmake-utils
 
-DESCRIPTION="Dcmtk"
-HOMEPAGE="http://dcmtk.org/"
+DESCRIPTION="The DICOM Toolkit"
+HOMEPAGE="http://dicom.offis.de/dcmtk.php.en"
 SRC_URI="http://dicom.offis.de/download/dcmtk/dcmtk360/dcmtk-3.6.0.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~mips ~sparc ~x86 ~amd64"
+KEYWORDS="~x86 ~amd64"
 IUSE="debug"
 
-PATCHES=(                                                                    
-        "${FILESDIR}"/${P}.patch                               
+PATCHES=(
+        "${FILESDIR}"/${P}.patch
 )
 
 src_configure() {
