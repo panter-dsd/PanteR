@@ -8,16 +8,17 @@ inherit cmake-utils
 
 DESCRIPTION="The DICOM Toolkit"
 HOMEPAGE="http://dicom.offis.de/dcmtk.php.en"
-SRC_URI="http://dicom.offis.de/download/dcmtk/dcmtk360/dcmtk-3.6.0.tar.gz"
+SRC_URI="http://dicom.offis.de/download/dcmtk/snapshot/old/dcmtk-3.6.1_20121102.tar.gz"
+S="${WORKDIR}/dcmtk-3.6.1_20121102"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="debug"
 
-PATCHES=(
-        "${FILESDIR}"/${P}.patch
-)
+#PATCHES=(
+#        "${FILESDIR}"/${P}.patch
+#)
 
 src_configure() {
 	local mycmakeargs=(
