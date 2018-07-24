@@ -8,7 +8,7 @@ JBIJ_PN_PRETTY='PyCharm'
 
 DESCRIPTION="${JBIJ_PN_PRETTY} is a Python IDE for professional developers"
 
-JBIJ_URI="python/pycharm-professional-182.3684.6"
+JBIJ_URI="python/pycharm-professional-182.3684.83"
 
 JBIJ_DESKTOP_EXTRAS=(
 	"MimeType=text/x-python;application/x-python;" # MUST end with semicolon

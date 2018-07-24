@@ -4,7 +4,7 @@
 EAPI=6
 
 JBIJ_PN_PRETTY='CLion'
-JBIJ_URI="cpp/CLion-2018.2-RC"
+JBIJ_URI="cpp/CLion-2018.2-RC3"
 
 inherit jetbrains-intellij
 
