@@ -4,7 +4,7 @@
 EAPI=6
 
 JBIJ_PN_PRETTY='PhpStorm'
-JBIJ_URI="webide/PhpStorm-182.3684.40"
+JBIJ_URI="webide/PhpStorm-${PV}"
 
 inherit jetbrains-intellij
 

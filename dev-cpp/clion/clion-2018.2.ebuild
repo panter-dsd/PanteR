@@ -10,7 +10,7 @@ inherit jetbrains-intellij
 
 DESCRIPTION="Complete toolset for C and C++ development"
 
-IUSE="+python system-cmake system-gdb system-lldb"
+IUSE="+python system-cmake system-gdb system-lldb system-clang"
 
 RDEPEND="
 	system-cmake? ( >=dev-util/cmake-3.2 )
@@ -43,4 +43,5 @@ src_install() {
 	use system-cmake	|| { chmod -v a+x bin/cmake/linux/bin/* || die ;}
 	use system-gdb		|| { chmod -v a+x bin/gdb/linux/bin/*	  || die ;}
 	use system-lldb		|| { chmod -v a+x bin/lldb/linux/bin/*  || die ;}
+	use system-clang		|| { chmod -v a+x bin/clang/linux/*  || die ;}
 }

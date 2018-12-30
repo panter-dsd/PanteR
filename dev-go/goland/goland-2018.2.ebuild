@@ -4,7 +4,7 @@
 EAPI=6
 
 JBIJ_PN_PRETTY='GoLand'
-JBIJ_URI="go/goland-182.3569.26"
+JBIJ_URI="go/goland-${PV}"
 
 inherit jetbrains-intellij
 
